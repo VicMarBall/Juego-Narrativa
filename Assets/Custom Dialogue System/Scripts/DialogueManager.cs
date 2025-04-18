@@ -19,14 +19,14 @@ public class DialogueManager : MonoBehaviour
 
 	#endregion
 
-	[Header("DEBUG TO DELETE")]
-	[SerializeField] List<SelectionButton> buttons;
-
 	DialogueNode currentNode;
 
 	[SerializeField] Canvas canvas;
 	[SerializeField] DialogueDisplay displayPrefab;
 	DialogueDisplay display;
+
+	[SerializeField] SelectionButton selectionButtonPrefab;
+	List<SelectionButton> selectionButtons = new List<SelectionButton>();
 
 	// Update is called once per frame
 	void Update()
@@ -52,11 +52,12 @@ public class DialogueManager : MonoBehaviour
 
 	public void StartDialogue(DialogueNode start)
 	{
-		// instantiate the dialogue display
 		if (display == null)
 		{
 			display = Instantiate(displayPrefab, canvas.transform);
 		}
+
+		DestroySelectionButtons();
 
 		ChangeNode(start);
 	}
@@ -87,8 +88,10 @@ public class DialogueManager : MonoBehaviour
 		int i = 0;
 		foreach (DialogueSelectionNode.Selection selection in selectionNode.Selections)
 		{
+			SelectionButton selectionButton = Instantiate(selectionButtonPrefab, new Vector3(100.0f, (i * 25.0f) + 100.0f, 0), Quaternion.identity, canvas.transform);
 			Debug.Log("Selection: " + selection.text);
-			buttons[i].SetSelection(selection);
+			selectionButton.SetSelection(selection);
+			selectionButtons.Add(selectionButton);
 			i++;
 		}
 	}
@@ -97,10 +100,23 @@ public class DialogueManager : MonoBehaviour
 	{
 		currentNode = null;
 		Destroy(display.gameObject);
+		DestroySelectionButtons();
 	}
 
 	public void SelectOption(DialogueNode next)
 	{
+		DestroySelectionButtons();
+
 		ChangeNode(next);
+	}
+
+	void DestroySelectionButtons()
+	{
+		foreach (SelectionButton button in selectionButtons)
+		{
+			Destroy(button.gameObject);
+		}
+
+		selectionButtons.Clear();
 	}
 }
