@@ -20,7 +20,6 @@ public class DialogueManager : MonoBehaviour
 	#endregion
 
 	[Header("DEBUG TO DELETE")]
-	[SerializeField] DialogueNode headNode;
 	[SerializeField] List<SelectionButton> buttons;
 
 	DialogueNode currentNode;
@@ -28,12 +27,6 @@ public class DialogueManager : MonoBehaviour
 	[SerializeField] Canvas canvas;
 	[SerializeField] DialogueDisplay displayPrefab;
 	DialogueDisplay display;
-
-	// DEBUG TO DELETE
-	private void Start()
-	{
-		StartDialogue(headNode);
-	}
 
 	// Update is called once per frame
 	void Update()
@@ -57,7 +50,7 @@ public class DialogueManager : MonoBehaviour
 		}
 	}
 
-	void StartDialogue(DialogueNode start)
+	public void StartDialogue(DialogueNode start)
 	{
 		// instantiate the dialogue display
 		if (display == null)
