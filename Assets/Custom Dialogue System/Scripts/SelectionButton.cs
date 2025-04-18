@@ -5,9 +5,6 @@ using UnityEngine;
 
 public class SelectionButton : MonoBehaviour
 {
-    // will probably change it to a manager
-    [SerializeField] Dialogue dialogue;
-
 	public TextMeshProUGUI textComponent;
 
     DialogueNode nextNode;
@@ -20,7 +17,7 @@ public class SelectionButton : MonoBehaviour
 
     public void OnClickButton()
     {
-        dialogue.SelectOption(nextNode);
+        DialogueManager.Instance.SelectOption(nextNode);
     }
 
 	// Start is called before the first frame update
