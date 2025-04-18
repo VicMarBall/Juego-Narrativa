@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: Select No
   m_EditorClassIdentifier: 
-  text: 
+  text: So sad
   next: {fileID: 0}
