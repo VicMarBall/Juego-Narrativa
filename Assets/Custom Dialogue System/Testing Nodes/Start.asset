@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c52c28fd389a043a7e027e8468da2b, type: 3}
-  m_Name: Node 1
+  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
+  m_Name: Start
   m_EditorClassIdentifier: 
-  text: sdafSAF
-  next: {fileID: 0}
+  text: Hello, you want something?
+  next: {fileID: 11400000, guid: dd8a5da75bd0a344ead0d451b466a92f, type: 2}

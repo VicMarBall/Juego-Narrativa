@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu()]
-public class DialogueNode : ScriptableObject
+public enum DialogueNodeType
 {
-    [SerializeField] string text;
-    [SerializeField] DialogueNode next;
+	TEXT,
+	SELECTION
+}
 
-    public string Text { get { return text; } }
-    public DialogueNode Next { get { return next; } }
-
+public abstract class DialogueNode : ScriptableObject
+{
+	public abstract DialogueNodeType type { get; }
 }
