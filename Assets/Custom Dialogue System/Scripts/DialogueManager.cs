@@ -25,6 +25,7 @@ public class DialogueManager : MonoBehaviour
 	[SerializeField] DialogueDisplay displayPrefab;
 	DialogueDisplay display;
 
+	[SerializeField] GameObject selectionLayout;
 	[SerializeField] SelectionButton selectionButtonPrefab;
 	List<SelectionButton> selectionButtons = new List<SelectionButton>();
 
@@ -88,7 +89,7 @@ public class DialogueManager : MonoBehaviour
 		int i = 0;
 		foreach (DialogueSelectionNode.Selection selection in selectionNode.Selections)
 		{
-			SelectionButton selectionButton = Instantiate(selectionButtonPrefab, new Vector3(100.0f, (i * 25.0f) + 100.0f, 0), Quaternion.identity, canvas.transform);
+			SelectionButton selectionButton = Instantiate(selectionButtonPrefab, selectionLayout.transform);
 			Debug.Log("Selection: " + selection.text);
 			selectionButton.SetSelection(selection);
 			selectionButtons.Add(selectionButton);
