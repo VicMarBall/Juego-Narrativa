@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 17
+  m_Name: 19 Good
   m_EditorClassIdentifier: 
-  text: "Entonces... \xBFque le ha parecido?"
-  next: {fileID: 11400000, guid: f3bfa659ad28578489677388c5058617, type: 2}
+  text: "Hmh. Ha estado... bien. Algo gen\xE9rico... Pero bien. Sin embargo, recuerdo
+    haber escuchado cosas mejores del mundo humano. Dandelia, \xBFest\xE1 segura
+    que el joven es tan bueno como dice?"
+  next: {fileID: 11400000, guid: 0b6f86fb460c0a34d8d7e82cbf2e0459, type: 2}

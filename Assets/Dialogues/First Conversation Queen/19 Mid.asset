@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 17
+  m_Name: 19 Mid
   m_EditorClassIdentifier: 
-  text: "Entonces... \xBFque le ha parecido?"
-  next: {fileID: 11400000, guid: f3bfa659ad28578489677388c5058617, type: 2}
+  text: "Ha sido... decepcionante. Hay que tener osadia para hacer un espect\xE1culo
+    tan mediocre en el aniversario de la reina. \xA1Guardias! Ll\xE9vense al humano
+    a los calabozos, y saquen al hada de mi fiesta"
+  next: {fileID: 11400000, guid: f4621366347787d46a96c47fd302a94c, type: 2}

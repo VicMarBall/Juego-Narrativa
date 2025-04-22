@@ -8,4 +8,6 @@ public class DialogueEventBridge : ScriptableObject
     public void GetItem(int item) { }
 
     public void FirstQueenConversationHappiness(int amount) { FindObjectOfType<FirstQueenConversation>()?.ChangeHappiness(amount); }
+    
+    public void GetFirstQueenBifurcation() { FindObjectOfType<FirstQueenConversation>()?.GetEnding(); }
 }

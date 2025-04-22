@@ -1331,6 +1331,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugText: {fileID: 2020525784}
+  goodEnding: {fileID: 11400000, guid: 47d51aafbbe9f494d8c3711dcacfe78f, type: 2}
+  midEnding: {fileID: 11400000, guid: eeace70e54400d142a919a2358c49dd1, type: 2}
+  badEnding: {fileID: 11400000, guid: 491f2d58187d6934489fc4179e25728f, type: 2}
   queensHappiness: 0
 --- !u!4 &1829038721
 Transform:

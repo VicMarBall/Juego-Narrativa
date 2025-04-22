@@ -5,7 +5,8 @@ using UnityEngine;
 public enum DialogueNodeType
 {
 	TEXT,
-	SELECTION
+	SELECTION,
+	BIFURCATION_EVENT
 }
 
 public abstract class DialogueNode : ScriptableObject

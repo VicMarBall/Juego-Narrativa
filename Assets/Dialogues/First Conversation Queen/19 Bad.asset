@@ -10,7 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 17
+  m_Name: 19 Bad
   m_EditorClassIdentifier: 
-  text: "Entonces... \xBFque le ha parecido?"
-  next: {fileID: 11400000, guid: f3bfa659ad28578489677388c5058617, type: 2}
+  text: "\xA1\xBFQue qu\xE9 me ha parecido?! No pienso aceptar ofensas a mi nombre,
+    menos a\xFAn de un bardo que no sabe rimar y de una mosquita con complejo de
+    bromista. \xA1Guardias! \xA1Ll\xE9venselos a los calabozos!"
+  next: {fileID: 0}

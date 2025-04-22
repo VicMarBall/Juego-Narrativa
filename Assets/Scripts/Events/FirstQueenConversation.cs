@@ -7,6 +7,10 @@ public class FirstQueenConversation : MonoBehaviour
 {
 	[SerializeField] public TextMeshProUGUI debugText;
 
+	[SerializeField] public DialogueNode goodEnding;
+	[SerializeField] public DialogueNode midEnding;
+	[SerializeField] public DialogueNode badEnding;
+
 	public int queensHappiness;
 
 	private void Awake()
@@ -19,5 +23,15 @@ public class FirstQueenConversation : MonoBehaviour
 	{ 
 		queensHappiness += amount; 
 		debugText.text = queensHappiness.ToString(); 
+	}
+
+	public void GetEnding()
+	{
+		DialogueNode nodeToUse;
+		if (queensHappiness == 3) { nodeToUse = goodEnding; }
+		else if (queensHappiness == -3) { nodeToUse = badEnding; }
+		else { nodeToUse = midEnding; }
+
+		DialogueManager.Instance.StartDialogue(nodeToUse);
 	}
 }

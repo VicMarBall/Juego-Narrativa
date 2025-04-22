@@ -74,13 +74,17 @@ public class DialogueManager : MonoBehaviour
 		currentNode = next;
 		Debug.Log("Current Node is " + currentNode.name);
 
-		if (next.type == DialogueNodeType.TEXT)
+		if (currentNode.type == DialogueNodeType.TEXT)
 		{
 			display.BeginDisplayText((DialogueTextNode)next);
 		}
-		else if (next.type == DialogueNodeType.SELECTION)
+		else if (currentNode.type == DialogueNodeType.SELECTION)
 		{
 			StartSelection((DialogueSelectionNode)next);
+		}
+		else if (currentNode.type == DialogueNodeType.BIFURCATION_EVENT)
+		{
+			((DialogueEventBifurcationNode)currentNode).nodeEvent.Invoke();
 		}
 	}
 
