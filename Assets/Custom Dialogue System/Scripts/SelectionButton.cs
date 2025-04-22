@@ -7,16 +7,17 @@ public class SelectionButton : MonoBehaviour
 {
 	public TextMeshProUGUI textComponent;
 
-    DialogueNode nextNode;
+    DialogueSelectionNode.Selection selection;
 
     public void SetSelection(DialogueSelectionNode.Selection selection)
     {
         textComponent.text = selection.text;
-        nextNode = selection.next;
+        this.selection = selection;
     }
 
     public void OnClickButton()
     {
-        DialogueManager.Instance.SelectOption(nextNode);
+        selection.onSelectEvents.Invoke();
+        DialogueManager.Instance.SelectOption(selection.next);
     }
 }

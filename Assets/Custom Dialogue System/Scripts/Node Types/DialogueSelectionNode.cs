@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu]
 public class DialogueSelectionNode : DialogueNode
@@ -13,6 +14,7 @@ public class DialogueSelectionNode : DialogueNode
     {
         [SerializeField] public string text;
 		[SerializeField] public DialogueNode next;
+        [SerializeField] public UnityEvent onSelectEvents;
     }
 
     [SerializeField] Selection[] selections;
