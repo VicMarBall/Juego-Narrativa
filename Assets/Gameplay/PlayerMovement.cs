@@ -57,6 +57,9 @@ public class PlayerMovement : MonoBehaviour
 	// Update is called once per frame
 	void Update()
 	{
+		horizontalInput = 0;
+		verticalInput = 0;
+
 		// grounded check
 		grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, whatIsGround);
 
@@ -142,5 +145,10 @@ public class PlayerMovement : MonoBehaviour
 	void ResetJump()
 	{
 		readyToJump = true;
+	}
+
+	public void GetInputs(bool getInputs)
+	{
+		getsInputs = getInputs;
 	}
 }

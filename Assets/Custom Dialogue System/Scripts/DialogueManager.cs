@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -28,6 +29,9 @@ public class DialogueManager : MonoBehaviour
 	[SerializeField] GameObject selectionLayout;
 	[SerializeField] SelectionButton selectionButtonPrefab;
 	List<SelectionButton> selectionButtons = new List<SelectionButton>();
+
+	[SerializeField] UnityEvent onDialogueStart;
+	[SerializeField] UnityEvent onDialogueEnd;
 
 	// Update is called once per frame
 	void Update()
@@ -59,6 +63,8 @@ public class DialogueManager : MonoBehaviour
 		}
 
 		DestroySelectionButtons();
+
+		onDialogueStart.Invoke();
 
 		ChangeNode(start);
 	}
@@ -106,6 +112,7 @@ public class DialogueManager : MonoBehaviour
 		currentNode = null;
 		Destroy(display.gameObject);
 		DestroySelectionButtons();
+		onDialogueEnd.Invoke();
 	}
 
 	public void SelectOption(DialogueNode next)
