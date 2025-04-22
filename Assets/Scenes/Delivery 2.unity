@@ -1146,7 +1146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6df8e93c493522489b0f6a7c632d287, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: f47916b1050ceea48978369884768397, type: 2}
+  dialogue: {fileID: 11400000, guid: 35120c379504b374abeaf4ad2fc6f72e, type: 2}
 --- !u!135 &1293863037
 SphereCollider:
   m_ObjectHideFlags: 0

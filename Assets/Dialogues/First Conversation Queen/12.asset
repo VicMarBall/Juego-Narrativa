@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64249066a58250d4694289dcf2ff18fc, type: 3}
+  m_Name: 12
+  m_EditorClassIdentifier: 
+  selections:
+  - text: "del reino la m\xE1s lista \u266A"
+    next: {fileID: 11400000, guid: dc277354810daa0438a594898947e99e, type: 2}
+    onSelectEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6a17b23b8cb5e3f47892370f925fda2d, type: 2}
+          m_TargetAssemblyTypeName: DialogueEventBridge, Assembly-CSharp
+          m_MethodName: FirstQueenConversationHappiness
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - text: "del reino la m\xE1s hermosa \u266A"
+    next: {fileID: 11400000, guid: dc277354810daa0438a594898947e99e, type: 2}
+    onSelectEvents:
+      m_PersistentCalls:
+        m_Calls: []
+  - text: "mayooooor \u266A"
+    next: {fileID: 11400000, guid: 6dbc0e031e491664495855e4599f940d, type: 2}
+    onSelectEvents:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 11400000, guid: 6a17b23b8cb5e3f47892370f925fda2d, type: 2}
+          m_TargetAssemblyTypeName: DialogueEventBridge, Assembly-CSharp
+          m_MethodName: FirstQueenConversationHappiness
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: -1
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
