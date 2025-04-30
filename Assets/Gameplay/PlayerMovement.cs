@@ -34,6 +34,17 @@ public class PlayerMovement : MonoBehaviour
 
 	Rigidbody rb;
 
+
+	float graphicsHoppingProgress = 0;
+
+	[Header("Hopping Animation")]
+	[SerializeField] float graphicsHoppingSpeed;
+	[SerializeField] float graphicsHoppingMaxDistance;
+
+	float currentGraphicsHoppingDistance;
+	[SerializeField] Transform graphicsHolder;
+
+	[Header("State")]
 	public MovementState state;
 	public enum MovementState
 	{
@@ -76,6 +87,12 @@ public class PlayerMovement : MonoBehaviour
 		{
 			rb.drag = 0;
 		}
+
+		if (graphicsHolder != null)
+        {
+			currentGraphicsHoppingDistance = Mathf.Abs(Mathf.Sin(graphicsHoppingProgress)) * graphicsHoppingMaxDistance;
+			graphicsHolder.localPosition = new Vector3(0, currentGraphicsHoppingDistance, 0);
+		}
 	}
 
 	void GetInputs()
@@ -111,9 +128,16 @@ public class PlayerMovement : MonoBehaviour
 		// calculate movement direction
 		moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
+		if (moveDirection.Equals(Vector3.zero)) 
+		{
+			graphicsHoppingProgress = 0;
+			return; 
+		}
+
 		if (grounded)
 		{
 			rb.AddForce(moveDirection.normalized * movementSpeed * 10f, ForceMode.Force);
+			UpdateHopping();
 		}
 		else
 		{
@@ -139,6 +163,8 @@ public class PlayerMovement : MonoBehaviour
 		// reset y velocity
 		rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
 
+		graphicsHoppingProgress = 0;
+
 		rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
 	}
 
@@ -151,4 +177,10 @@ public class PlayerMovement : MonoBehaviour
 	{
 		getsInputs = getInputs;
 	}
+
+	void UpdateHopping()
+    {
+		graphicsHoppingProgress += Time.deltaTime * graphicsHoppingSpeed;
+		graphicsHoppingProgress %= 2 * Mathf.PI;
+    }
 }

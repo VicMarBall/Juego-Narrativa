@@ -426,6 +426,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3187158598891906044, guid: f116613ee81aa7e4ab6604abfdf91972,
+        type: 3}
+      propertyPath: graphicsHoppingSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3187158598891906044, guid: f116613ee81aa7e4ab6604abfdf91972,
+        type: 3}
+      propertyPath: graphicsHoppingMaxDistance
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3286940925792823604, guid: f116613ee81aa7e4ab6604abfdf91972,
         type: 3}
       propertyPath: m_TagString
@@ -1934,6 +1944,54 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1 &1525212267
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1525212269}
+  - component: {fileID: 1525212268}
+  m_Layer: 0
+  m_Name: Queen Timer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1525212268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525212267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cffe917d18cc9248849881130659900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalTime: 100
+  onTimerFinishedEvents:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!4 &1525212269
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525212267}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.3500001, y: 5.91, z: -8.787365}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1619611930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,3 +2420,4 @@ SceneRoots:
   - {fileID: 1078710828}
   - {fileID: 1619611934}
   - {fileID: 752530228}
+  - {fileID: 1525212269}
