@@ -15,12 +15,7 @@ namespace DialogueNewVersion
 
             Dialogue dialogue = (Dialogue)target;
 
-            if (GUILayout.Button("Hello"))
-            {
-                dialogue.nodes.Add(new DialogueTextNode());
-            }
-
-            GUI.Box(new Rect(new Vector2(0, 0), new Vector2(10, 10)), "Hello!");
+            //GUI.Box(new Rect(new Vector2(0, 0), new Vector2(10, 10)), "Hello!");
 
             //foreach (var dialogueNode in dialogue.nodes)
             //{

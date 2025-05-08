@@ -21,15 +21,4 @@ public class DialogueSelectionNode : DialogueNode
 
     public Selection[] Selections {  get { return selections; } }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

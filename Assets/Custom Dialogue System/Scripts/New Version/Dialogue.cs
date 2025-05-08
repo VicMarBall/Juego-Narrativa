@@ -38,9 +38,7 @@ namespace DialogueNewVersion
 
 	public class Dialogue : MonoBehaviour
 	{
-		public List<DialogueNode> nodes = new List<DialogueNode>();
-
-		public DialogueTextNode testTextNode;
+		public List<DialogueNodeComponent> nodes = new List<DialogueNodeComponent>();
 	}
 
 }
