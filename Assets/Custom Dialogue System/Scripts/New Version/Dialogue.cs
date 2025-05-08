@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace DialogueNewVersion
 {
+	[Serializable]
 	public enum DialogueNodeType
 	{
 		TEXT,
@@ -12,10 +13,10 @@ namespace DialogueNewVersion
 		BIFURCATION_EVENT
 	}
 
-
-	public abstract class DialogueNode
+	[Serializable]
+	public class DialogueNode
 	{
-		public abstract DialogueNodeType type { get; }
+		public virtual DialogueNodeType type { get; }
 	}
 
 
@@ -39,7 +40,7 @@ namespace DialogueNewVersion
 	{
 		public List<DialogueNode> nodes = new List<DialogueNode>();
 
-
+		public DialogueTextNode testTextNode;
 	}
 
 }
