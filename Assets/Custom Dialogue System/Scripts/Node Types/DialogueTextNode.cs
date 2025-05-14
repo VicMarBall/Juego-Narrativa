@@ -6,6 +6,7 @@ public class DialogueTextNode : DialogueNode
 {
 	public override DialogueNodeType type { get { return DialogueNodeType.TEXT; } }
 
+	[TextArea]
 	[SerializeField] string text;
 
     [SerializeField] DialogueNode next;
