@@ -9,7 +9,7 @@ public enum DialogueNodeType
 	BIFURCATION_EVENT
 }
 
-public abstract class DialogueNode : ScriptableObject
+public abstract class DialogueNode : MonoBehaviour
 {
 	public abstract DialogueNodeType type { get; }
 }
