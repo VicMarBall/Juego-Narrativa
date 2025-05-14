@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
 	float currentGraphicsHoppingDistance;
 	[SerializeField] Transform graphicsHolder;
+	SpriteRenderer sprite;
 
 	[Header("State")]
 	public MovementState state;
@@ -52,12 +53,12 @@ public class PlayerMovement : MonoBehaviour
 		air
 	}
 
-	// Start is called before the first frame update
-	void Start()
-	{
+    private void Awake()
+    {
 		rb = GetComponent<Rigidbody>();
 		rb.freezeRotation = true;
 		getsInputs = true;
+		sprite = graphicsHolder.gameObject.GetComponentInChildren<SpriteRenderer>();
 	}
 
 	void FixedUpdate()
@@ -92,6 +93,10 @@ public class PlayerMovement : MonoBehaviour
         {
 			currentGraphicsHoppingDistance = Mathf.Abs(Mathf.Sin(graphicsHoppingProgress)) * graphicsHoppingMaxDistance;
 			graphicsHolder.localPosition = new Vector3(0, currentGraphicsHoppingDistance, 0);
+
+			if (horizontalInput == 0) { }
+			else if (horizontalInput > 0) { sprite.flipX = true; }
+			else { sprite.flipX = false; }
 		}
 	}
 
