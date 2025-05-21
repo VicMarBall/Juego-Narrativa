@@ -80,18 +80,24 @@ public class DialogueManager : MonoBehaviour
 		currentNode = next;
 		Debug.Log("Current Node is " + currentNode.name);
 
-		if (currentNode.type == DialogueNodeType.TEXT)
-		{
-			display.BeginDisplayText((DialogueTextNode)next);
-		}
-		else if (currentNode.type == DialogueNodeType.SELECTION)
-		{
-			StartSelection((DialogueSelectionNode)next);
-		}
-		else if (currentNode.type == DialogueNodeType.BIFURCATION_EVENT)
-		{
-			((DialogueEventBifurcationNode)currentNode).nodeEvent.Invoke();
-		}
+		switch (currentNode.type)
+        {
+			case DialogueNodeType.TEXT:
+				display.BeginDisplayText((DialogueTextNode)next);
+				break;
+			case DialogueNodeType.SELECTION:
+				StartSelection((DialogueSelectionNode)next);
+				break;
+			case DialogueNodeType.CONDITIONAL_SELECTION:
+				StartSelection((DialogueConditionalSelectionNode)next);
+				break;
+			case DialogueNodeType.BIFURCATION_EVENT:
+				((DialogueEventBifurcationNode)currentNode).nodeEvent.Invoke();
+				break;
+			default:
+				Debug.Log("currentNode of unknown type");
+				break;
+        }
 	}
 
 	void StartSelection(DialogueSelectionNode selectionNode)
@@ -99,6 +105,22 @@ public class DialogueManager : MonoBehaviour
 		int i = 0;
 		foreach (DialogueSelectionNode.Selection selection in selectionNode.Selections)
 		{
+			SelectionButton selectionButton = Instantiate(selectionButtonPrefab, selectionLayout.transform);
+			Debug.Log("Selection: " + selection.text);
+			selectionButton.SetSelection(selection);
+			selectionButtons.Add(selectionButton);
+			i++;
+		}
+	}
+
+	void StartSelection(DialogueConditionalSelectionNode selectionNode)
+	{
+		int i = 0;
+		foreach (DialogueConditionalSelectionNode.ConditionalSelection conditionalSelection in selectionNode.Selections)
+		{
+			if (!conditionalSelection.condition) { continue; }
+
+			DialogueSelectionNode.Selection selection = conditionalSelection.selection;
 			SelectionButton selectionButton = Instantiate(selectionButtonPrefab, selectionLayout.transform);
 			Debug.Log("Selection: " + selection.text);
 			selectionButton.SetSelection(selection);

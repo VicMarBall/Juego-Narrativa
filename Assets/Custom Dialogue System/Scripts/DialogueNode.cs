@@ -6,6 +6,7 @@ public enum DialogueNodeType
 {
 	TEXT,
 	SELECTION,
+	CONDITIONAL_SELECTION,
 	BIFURCATION_EVENT
 }
 
