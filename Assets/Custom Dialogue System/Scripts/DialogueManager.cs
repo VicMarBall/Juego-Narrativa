@@ -94,6 +94,10 @@ public class DialogueManager : MonoBehaviour
 			case DialogueNodeType.BIFURCATION_EVENT:
 				((DialogueEventBifurcationNode)currentNode).nodeEvent.Invoke();
 				break;
+			case DialogueNodeType.EVENT:
+				((DialogueEventNode)currentNode).nodeEvent.Invoke();
+				ChangeNode(((DialogueEventNode)currentNode).Next);
+				break;
 			default:
 				Debug.Log("currentNode of unknown type");
 				break;

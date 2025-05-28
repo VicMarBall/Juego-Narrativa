@@ -178,6 +178,67 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1226817584057097758, guid: 8e6882dd900b16a478e11f1df5fb01d3, type: 3}
+--- !u!1 &174035914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 174035915}
+  - component: {fileID: 174035916}
+  m_Layer: 0
+  m_Name: ClockTimer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &174035915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174035914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 234.18425, y: 130.2212, z: 1.0340226}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &174035916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 174035914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cffe917d18cc9248849881130659900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clockText: {fileID: 2020525784}
+  totalTime: 0
+  on20oClockEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  on21oClockEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  on22oClockEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  on23oClockEvents:
+    m_PersistentCalls:
+      m_Calls: []
+  on24oClockEvents:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &212845792 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1869004960016252962, guid: 8e6882dd900b16a478e11f1df5fb01d3,
@@ -242,6 +303,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1293863038}
     m_Modifications:
+    - target: {fileID: 1686823876686429324, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: selections.Array.data[0].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1829038720}
+    - target: {fileID: 1686823876686429324, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: selections.Array.data[2].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1829038720}
+    - target: {fileID: 4869608013692380206, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: selections.Array.data[0].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1829038720}
+    - target: {fileID: 4869608013692380206, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: selections.Array.data[2].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1829038720}
     - target: {fileID: 6976948935217182961, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
         type: 3}
       propertyPath: m_Name
@@ -252,6 +333,11 @@ PrefabInstance:
       propertyPath: nodeEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1829038720}
+    - target: {fileID: 7429405679052665666, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1452530357}
     - target: {fileID: 8149265741135457026, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -302,9 +388,23 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8450878709623550482, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: selections.Array.data[0].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1829038720}
+    - target: {fileID: 8450878709623550482, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: selections.Array.data[2].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1829038720}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8149265741135457026, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1452530356}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84db9c9972392ab4c896d3c6d3c3e3e0, type: 3}
 --- !u!114 &371407058 stripped
@@ -2040,7 +2140,7 @@ Transform:
   - {fileID: 371407059}
   m_Father: {fileID: 389141391}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1525212267
+--- !u!1 &1452530355
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2048,46 +2148,70 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1525212269}
-  - component: {fileID: 1525212268}
+  - component: {fileID: 1452530356}
+  - component: {fileID: 1452530357}
   m_Layer: 0
-  m_Name: Queen Timer
+  m_Name: 23 Start Timer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1525212268
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525212267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cffe917d18cc9248849881130659900, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  totalTime: 100
-  onTimerFinishedEvents:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!4 &1525212269
+--- !u!4 &1452530356
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1525212267}
+  m_GameObject: {fileID: 1452530355}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3500001, y: 5.91, z: -8.787365}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 371407059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1452530357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1452530355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 174035916}
+        m_TargetAssemblyTypeName: ClockTimer, Assembly-CSharp
+        m_MethodName: SetTimer
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 174035916}
+        m_TargetAssemblyTypeName: ClockTimer, Assembly-CSharp
+        m_MethodName: BeginTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  next: {fileID: 0}
 --- !u!1 &1568530501 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7750397243111347764, guid: 8e6882dd900b16a478e11f1df5fb01d3,
@@ -2273,20 +2397,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4953014027043507130, guid: 38ae00a6a5f9b1c46b7be709155dc96a,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 3.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4953014027043507130, guid: 38ae00a6a5f9b1c46b7be709155dc96a,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.59
-      objectReference: {fileID: 0}
     - target: {fileID: 5398300217169776229, guid: 38ae00a6a5f9b1c46b7be709155dc96a,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.38
+      value: 3.96
       objectReference: {fileID: 0}
     - target: {fileID: 5398300217169776229, guid: 38ae00a6a5f9b1c46b7be709155dc96a,
         type: 3}
@@ -2296,7 +2410,7 @@ PrefabInstance:
     - target: {fileID: 5398300217169776229, guid: 38ae00a6a5f9b1c46b7be709155dc96a,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.15
+      value: -2.79
       objectReference: {fileID: 0}
     - target: {fileID: 5398300217169776229, guid: 38ae00a6a5f9b1c46b7be709155dc96a,
         type: 3}
@@ -2367,7 +2481,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ad4cb30bc37de24c8620076b7bc119f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debugText: {fileID: 2020525784}
   goodEnding: {fileID: 371407062}
   midEnding: {fileID: 371407061}
   badEnding: {fileID: 371407058}
@@ -2465,9 +2578,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '0
-
-'
+  m_text: TIME
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2662,5 +2773,5 @@ SceneRoots:
   - {fileID: 438502409}
   - {fileID: 1829038721}
   - {fileID: 553470274}
-  - {fileID: 1525212269}
   - {fileID: 616036252}
+  - {fileID: 174035915}

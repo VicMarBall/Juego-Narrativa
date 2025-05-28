@@ -7,7 +7,8 @@ public enum DialogueNodeType
 	TEXT,
 	SELECTION,
 	CONDITIONAL_SELECTION,
-	BIFURCATION_EVENT
+	BIFURCATION_EVENT,
+	EVENT
 }
 
 public abstract class DialogueNode : MonoBehaviour

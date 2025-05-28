@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class FirstQueenConversation : MonoBehaviour
 {
-	[SerializeField] public TextMeshProUGUI debugText;
-
 	[SerializeField] public DialogueNode goodEnding;
 	[SerializeField] public DialogueNode midEnding;
 	[SerializeField] public DialogueNode badEnding;
@@ -16,13 +14,11 @@ public class FirstQueenConversation : MonoBehaviour
 	private void Awake()
 	{
 		queensHappiness = 0;
-		debugText.text = queensHappiness.ToString();
 	}
 
 	public void ChangeHappiness(int amount) 
 	{ 
 		queensHappiness += amount; 
-		debugText.text = queensHappiness.ToString(); 
 	}
 
 	public void GetEnding()
