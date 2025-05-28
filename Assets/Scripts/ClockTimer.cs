@@ -13,7 +13,13 @@ public class ClockTimer : MonoBehaviour
 
     float elapsedTime;
 
-    // events after the first queen conversation
+    bool hasBeen20oClock = false;
+	bool hasBeen21oClock = false;
+	bool hasBeen22oClock = false;
+	bool hasBeen23oClock = false;
+	bool hasBeen24oClock = false;
+
+	// events after the first queen conversation
 	[SerializeField] UnityEvent on20oClockEvents;
 	[SerializeField] UnityEvent on21oClockEvents;
 	[SerializeField] UnityEvent on22oClockEvents;
@@ -41,16 +47,71 @@ public class ClockTimer : MonoBehaviour
             int seconds = Mathf.FloorToInt(elapsedTime % 60);
 
             clockText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-            //if (elapsedTime <= 0)
-            //{
-            //    OnTimerFinished();
-            //}
-        }
-    }
+			//if (elapsedTime <= 0)
+			//{
+			//    OnTimerFinished();
+			//}
 
-    public void BeginTimer()
+			CheckHours();
+		}
+	}
+
+    void CheckHours()
+    {
+        if (!hasBeen20oClock)
+        {
+            if (elapsedTime >= 20 * 60)
+            {
+                hasBeen20oClock = true;
+                on20oClockEvents.Invoke();
+            }
+        }
+
+		if (!hasBeen21oClock)
+		{
+			if (elapsedTime >= 21 * 60)
+			{
+				hasBeen21oClock = true;
+				on21oClockEvents.Invoke();
+			}
+		}
+
+		if (!hasBeen22oClock)
+		{
+			if (elapsedTime >= 22 * 60)
+			{
+				hasBeen22oClock = true;
+				on22oClockEvents.Invoke();
+			}
+		}
+
+		if (!hasBeen23oClock)
+		{
+			if (elapsedTime >= 23 * 60)
+			{
+				hasBeen23oClock = true;
+				on23oClockEvents.Invoke();
+			}
+		}
+
+		if (!hasBeen24oClock)
+		{
+			if (elapsedTime >= 24 * 60)
+			{
+				hasBeen24oClock = true;
+				on24oClockEvents.Invoke();
+			}
+		}
+	}
+
+	public void PlayTimer()
     {
         timerActivated = true;
         //timeLeft = totalTime;
     }
+
+    public void StopTimer()
+    {
+		timerActivated = false;
+	}
 }
