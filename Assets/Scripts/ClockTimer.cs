@@ -114,4 +114,9 @@ public class ClockTimer : MonoBehaviour
     {
 		timerActivated = false;
 	}
+
+	public void AdvanceTime(int minutesToAdvance)
+	{
+		elapsedTime += minutesToAdvance;
+	}
 }
