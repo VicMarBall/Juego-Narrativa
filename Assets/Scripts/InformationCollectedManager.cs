@@ -6,10 +6,10 @@ using UnityEngine;
 [Serializable]
 public enum InformationOrigin
 {
+	ALWAYS_TRUE,
 	NAYA,
 	PUCK,
 	CALICO,
-	ALWAYS_TRUE, 
 	MAX_NUMBER // only used to create the dictionary
 }
 
