@@ -8,8 +8,11 @@ public enum InformationOrigin
 {
 	ALWAYS_TRUE,
 	NAYA,
-	PUCK,
+	PUCK_A,
+	PUCK_B,
 	CALICO,
+	DANDELIA,
+	SAET,
 	MAX_NUMBER // only used to create the dictionary
 }
 
