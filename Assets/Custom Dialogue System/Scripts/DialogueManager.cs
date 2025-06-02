@@ -122,7 +122,7 @@ public class DialogueManager : MonoBehaviour
 		int i = 0;
 		foreach (DialogueConditionalSelectionNode.ConditionalSelection conditionalSelection in selectionNode.Selections)
 		{
-			if (!conditionalSelection.condition) { continue; }
+			if (!InformationCollectedManager.Instance.IsInfoUnlocked(conditionalSelection.condition)) { continue; }
 
 			DialogueSelectionNode.Selection selection = conditionalSelection.selection;
 			SelectionButton selectionButton = Instantiate(selectionButtonPrefab, selectionLayout.transform);

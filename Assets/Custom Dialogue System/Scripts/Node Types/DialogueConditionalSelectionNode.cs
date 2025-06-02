@@ -11,7 +11,7 @@ public class DialogueConditionalSelectionNode : DialogueNode
     [Serializable]
     public struct ConditionalSelection
     {
-        [SerializeField] public bool condition;
+        [SerializeField] public InformationOrigin condition;
         [SerializeField] public DialogueSelectionNode.Selection selection;
     }
 
