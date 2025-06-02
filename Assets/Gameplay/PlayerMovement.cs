@@ -95,8 +95,20 @@ public class PlayerMovement : MonoBehaviour
 			graphicsHolder.localPosition = new Vector3(0, currentGraphicsHoppingDistance, 0);
 
 			if (horizontalInput == 0) { }
-			else if (horizontalInput > 0) { sprite.flipX = true; }
-			else { sprite.flipX = false; }
+			else if (horizontalInput > 0) 
+			{
+				graphicsHolder.transform.localScale = new Vector3(
+					-Mathf.Abs(graphicsHolder.transform.localScale.x), 
+					graphicsHolder.transform.localScale.y, 
+					graphicsHolder.transform.localScale.z);
+			}
+			else
+			{
+				graphicsHolder.transform.localScale = new Vector3(
+					Mathf.Abs(graphicsHolder.transform.localScale.x),
+					graphicsHolder.transform.localScale.y,
+					graphicsHolder.transform.localScale.z);
+			}
 		}
 	}
 
