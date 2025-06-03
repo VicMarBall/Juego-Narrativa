@@ -898,7 +898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "SAET: Tengo que volver fuera pero si necesitas algo m\xE1s. Cuando estoy
     en la cocina puedes hablar conmigo\u2026 Suerte."
-  next: {fileID: 3159318856926879579}
+  next: {fileID: 0}
 --- !u!1 &4236669968271102308
 GameObject:
   m_ObjectHideFlags: 0
@@ -1842,7 +1842,7 @@ MonoBehaviour:
   text: "PUCK: S\xED s\xED, ya s\xE9, pero ahora tenemos a un invitado. \xBFQu\xE9
     dices? \xBFQuieres ayudarme a hacer esta fiesta un poco m\xE1s interesante? Puede
     que te pueda ayudar un poco con tu misi\xF3n para la reina."
-  next: {fileID: 0}
+  next: {fileID: 3687765799392869556}
 --- !u!1 &9132156562198866378
 GameObject:
   m_ObjectHideFlags: 0
