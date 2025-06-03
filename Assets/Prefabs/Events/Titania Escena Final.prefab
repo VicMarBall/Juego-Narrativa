@@ -36,8 +36,56 @@ Transform:
   - {fileID: 6965512085171620175}
   - {fileID: 5934191756836285313}
   - {fileID: 4108416129205253691}
+  - {fileID: 5970853544773280268}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &6184163134323876515
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5970853544773280268}
+  - component: {fileID: 8642535090773338526}
+  m_Layer: 0
+  m_Name: Song Event Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5970853544773280268
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184163134323876515}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6190894174182859989}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8642535090773338526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6184163134323876515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a922ab385471114a945be5d06bb5285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secretEnding: {fileID: 6505852129398685105}
+  goodEnding: {fileID: 7452576431243347041}
+  badEnding: {fileID: 7715034149968461641}
 --- !u!1001 &457857000111112359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -46,10 +94,210 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6190894174182859989}
     m_Modifications:
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8642535090773338526}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeHappiness
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FinalSongScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2059286367998446379, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8642535090773338526}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8642535090773338526}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeHappiness
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeHappiness
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FinalSongScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FinalSongScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6309527487012980251, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[1].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8642535090773338526}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeHappiness
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FinalSongScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6449640877516775155, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6976948935217182961, guid: 00cf34e918b14504686f7a870db7003e,
         type: 3}
       propertyPath: m_Name
       value: Titania Dialogue Final
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8642535090773338526}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeHappiness
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FinalSongScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7681634864841556521, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 8149265741135457026, guid: 00cf34e918b14504686f7a870db7003e,
         type: 3}
@@ -101,11 +349,87 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8642535090773338526}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ChangeHappiness
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: FinalSongScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8829266088644057589, guid: 00cf34e918b14504686f7a870db7003e,
+        type: 3}
+      propertyPath: selections.Array.data[0].selection.onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 00cf34e918b14504686f7a870db7003e, type: 3}
+--- !u!114 &6505852129398685105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6634871589652036886, guid: 00cf34e918b14504686f7a870db7003e,
+    type: 3}
+  m_PrefabInstance: {fileID: 457857000111112359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7452576431243347041 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7004922899039110342, guid: 00cf34e918b14504686f7a870db7003e,
+    type: 3}
+  m_PrefabInstance: {fileID: 457857000111112359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &7715034149968461641 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7875648042738401262, guid: 00cf34e918b14504686f7a870db7003e,
+    type: 3}
+  m_PrefabInstance: {fileID: 457857000111112359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &8593607544301104037 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8149265741135457026, guid: 00cf34e918b14504686f7a870db7003e,
