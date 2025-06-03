@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
 
 	DialogueNode currentNode;
 
+	public bool currentlyOnDialogue { get { return currentNode != null; } }
+
 	[SerializeField] Canvas canvas;
 	[SerializeField] DialogueDisplay displayPrefab;
 	DialogueDisplay display;
@@ -67,6 +69,7 @@ public class DialogueManager : MonoBehaviour
 		DestroySelectionButtons();
 
 		onDialogueStart.Invoke();
+		interactUI.SetActive(false);
 
 		ChangeNode(start);
 	}

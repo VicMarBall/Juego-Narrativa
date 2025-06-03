@@ -22,13 +22,19 @@ public class DialogueTrigger : MonoBehaviour
 	{
 		if (other.CompareTag("Player"))
 		{
-			DialogueManager.Instance.interactUI.SetActive(true);
-
-			if (Input.GetKey(KeyCode.F))
+			if (!DialogueManager.Instance.currentlyOnDialogue)
 			{
-				DialogueManager.Instance.interactUI.SetActive(false);
-				StartDialogue();
-				if (disableTriggerOnInteract) { gameObject.SetActive(false); }
+				DialogueManager.Instance.interactUI.SetActive(true);
+
+				if (Input.GetKey(KeyCode.F))
+				{
+					DialogueManager.Instance.interactUI.SetActive(false);
+					StartDialogue();
+					if (disableTriggerOnInteract)
+					{
+						gameObject.SetActive(false);
+					}
+				}
 			}
 
 		}

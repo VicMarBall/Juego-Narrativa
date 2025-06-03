@@ -29,6 +29,7 @@ public class ClockTimer : MonoBehaviour
 	private void Awake()
 	{
 		timerActivated = false;
+		elapsedTime = 20 * 60;
 	}
 
 	public void SetTimer(int hour)
@@ -43,20 +44,16 @@ public class ClockTimer : MonoBehaviour
         {
             elapsedTime += Time.deltaTime;
 
-            int minutes = Mathf.FloorToInt(elapsedTime / 60);
-            int seconds = Mathf.FloorToInt(elapsedTime % 60);
-
-            clockText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
-			//if (elapsedTime <= 0)
-			//{
-			//    OnTimerFinished();
-			//}
-
 			CheckHours();
 		}
+
+		int minutes = Mathf.FloorToInt(elapsedTime / 60);
+		int seconds = Mathf.FloorToInt(elapsedTime % 60);
+
+		clockText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 	}
 
-    void CheckHours()
+	void CheckHours()
     {
         if (!hasBeen20oClock)
         {
