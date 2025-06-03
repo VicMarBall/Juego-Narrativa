@@ -6,19 +6,46 @@ public class DialogueTrigger : MonoBehaviour
 {
 	[SerializeField] DialogueNode dialogue;
 
+	private void Awake()
+	{
+		DialogueManager.Instance.interactUI.SetActive(false);
+	}
+
 	void StartDialogue()
 	{
 		DialogueManager.Instance.StartDialogue(dialogue);
 	}
 
-	private void OnTriggerEnter(Collider other)
+	private void OnTriggerStay(Collider other)
 	{
 		if (other.CompareTag("Player"))
 		{
-			StartDialogue();
-			gameObject.SetActive(false);
+			DialogueManager.Instance.interactUI.SetActive(true);
 
-			//Destroy(this.gameObject);
+			if (Input.GetKey(KeyCode.F))
+			{
+				DialogueManager.Instance.interactUI.SetActive(false);
+				StartDialogue();
+				gameObject.SetActive(false);
+			}
+
 		}
 	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.CompareTag("Player"))
+		{
+			DialogueManager.Instance.interactUI.SetActive(false);
+		}
+	}
+
+	//private void OnTriggerEnter(Collider other)
+	//{
+	//	if (other.CompareTag("Player"))
+	//	{
+	//		StartDialogue();
+	//		gameObject.SetActive(false);
+	//	}
+	//}
 }

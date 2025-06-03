@@ -30,6 +30,8 @@ public class DialogueManager : MonoBehaviour
 	[SerializeField] SelectionButton selectionButtonPrefab;
 	List<SelectionButton> selectionButtons = new List<SelectionButton>();
 
+	[SerializeField] public GameObject interactUI;
+
 	[SerializeField] UnityEvent onDialogueStart;
 	[SerializeField] UnityEvent onDialogueEnd;
 
