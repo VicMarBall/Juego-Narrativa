@@ -6,6 +6,8 @@ public class DialogueTrigger : MonoBehaviour
 {
 	[SerializeField] DialogueNode dialogue;
 
+	[SerializeField] bool disableTriggerOnInteract = true;
+
 	private void Awake()
 	{
 		DialogueManager.Instance.interactUI.SetActive(false);
@@ -26,7 +28,7 @@ public class DialogueTrigger : MonoBehaviour
 			{
 				DialogueManager.Instance.interactUI.SetActive(false);
 				StartDialogue();
-				gameObject.SetActive(false);
+				if (disableTriggerOnInteract) { gameObject.SetActive(false); }
 			}
 
 		}
