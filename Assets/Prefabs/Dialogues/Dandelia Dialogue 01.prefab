@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3106618258003822860}
   - component: {fileID: 3886200134560577600}
   m_Layer: 0
-  m_Name: 07 BARDO
+  m_Name: 08 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,106 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Bueno, yo...
-  next: {fileID: 8244570681330044154}
---- !u!1 &246063188869876850
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7631272455680929508}
-  - component: {fileID: 1415313963827903127}
-  m_Layer: 0
-  m_Name: 09 PUCK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7631272455680929508
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246063188869876850}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9014518752423734872}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1415313963827903127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246063188869876850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: "PUCK: Supongo que la historia se repite, ahora hay otro changeling en la
-    corte que Tit\xE1nica decidi\xF3 cuidar y querer. Aunque el rey lleva tanto tiempo
-    sin estar aqu\xED que ya la ni\xF1a ha crecido, supongo que no podr\xE1n discutir
-    esta vez, que fastidio."
-  next: {fileID: 1785315166701988101}
---- !u!1 &700820055518636928
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7705913542540179788}
-  - component: {fileID: 4454374802452660761}
-  m_Layer: 0
-  m_Name: DESBLOQUEAR PUCK_A
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7705913542540179788
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700820055518636928}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8406999609500554258}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4454374802452660761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 700820055518636928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeEvent:
-    m_PersistentCalls:
-      m_Calls: []
+  text: "DANDELIA: No, tienes raz\xF3n, nada de llorar. Tienes que hacer una mejor
+    canci\xF3n. La reina nos dio otro intento, eso significa que todav\xEDa hay esperanza."
   next: {fileID: 4471337686240361472}
---- !u!1 &756761268252987089
+--- !u!1 &560035055359464457
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,44 +55,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3091824782727160742}
-  - component: {fileID: 3769285132085127237}
+  - component: {fileID: 6298698357870651149}
+  - component: {fileID: 8286458478465941407}
   m_Layer: 0
-  m_Name: 08 BARDO
+  m_Name: 10 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3091824782727160742
+--- !u!4 &6298698357870651149
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756761268252987089}
+  m_GameObject: {fileID: 560035055359464457}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 9014518752423734872}
+  m_Father: {fileID: 8149265741135457026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3769285132085127237
+--- !u!114 &8286458478465941407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 756761268252987089}
+  m_GameObject: {fileID: 560035055359464457}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "\xBFQu\xE9?"
-  next: {fileID: 1415313963827903127}
+  text: "DANDELIA: \xA1Si! Perfecto. Oh, puede que todav\xEDa no lo haya perdido
+    todo. T\xFA ve ha buscar a inspiraci\xF3n y yo tratar\xE9 de\u2026 asegurarme
+    que no quedarme sin esta oportunidad. Todo va a salir bien mientras hagas un
+    buen trabajo. \xA1Te ver\xE9 pronto!"
+  next: {fileID: 7446863080277851239}
 --- !u!1 &952965284481537383
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +107,7 @@ GameObject:
   - component: {fileID: 8882986169355917132}
   - component: {fileID: 2320929499940374105}
   m_Layer: 0
-  m_Name: 06 PUCK
+  m_Name: 07 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,9 +140,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "PUCK: Bromas memorables, hm. Hubo aquella vez con los mortales y la cabeza
-    de burro. \xA1Oh! y el polen del amor m\xE1gico."
-  next: {fileID: 373873710544151434}
+  text: "DANDELIA: No, no, no. Todo ir\xE1 bien, simplemente tienes que hacer una
+    mejor canci\xF3n. Para eso es la segunda oportunidad. Todav\xEDa hay esperanza."
+  next: {fileID: 4471337686240361472}
 --- !u!1 &1257329895587433396
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,155 +174,8 @@ Transform:
   m_Children:
   - {fileID: 2978834369690986945}
   - {fileID: 8882986169355917132}
-  - {fileID: 2145848826053765332}
-  - {fileID: 3091824782727160742}
-  - {fileID: 7631272455680929508}
-  - {fileID: 415783784035361371}
   m_Father: {fileID: 8149265741135457026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1569881846898896634
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2145848826053765332}
-  - component: {fileID: 373873710544151434}
-  m_Layer: 0
-  m_Name: 07 PUCK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2145848826053765332
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569881846898896634}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9014518752423734872}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &373873710544151434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1569881846898896634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: "PUCK: Menos mal que Ober\xF3n estaba detr\xE1s de esa parte del plan. Ojal\xE1
-    estuviera aqu\xED, siempre tiene tan grandes ideas mi maestro \xA1y la reina
-    siempre lo perdona!, se quieren demasiado como para cualquier otra cosa."
-  next: {fileID: 3769285132085127237}
---- !u!1 &1786705245960666699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1806754188857931074}
-  - component: {fileID: 8244570681330044154}
-  m_Layer: 0
-  m_Name: 08 PUCK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1806754188857931074
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786705245960666699}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8406999609500554258}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8244570681330044154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1786705245960666699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: "PUCK: Jajaja, \xA1tu cara! Estabas ah\xED como que \u201COh no, qu\xE9 voy
-    a hacer si Puck no me da su maravillosa informaci\xF3n sobre la reina Titania."
-  next: {fileID: 8254524896997554738}
---- !u!1 &2066997124406195293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8291969026138313608}
-  - component: {fileID: 7231436386380003102}
-  m_Layer: 0
-  m_Name: 11 PUCK
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8291969026138313608
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066997124406195293}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8406999609500554258}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7231436386380003102
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2066997124406195293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: "PUCK: La reina Titania, tiene todo lo que pueda querer en sus manos y odiar\xEDa
-    perder ese control, ya pas\xF3 una vez. As\xED que lo maneja todo al detalle
-    y es despiadada con cualquiera que no haga lo que debe."
-  next: {fileID: 8385283454250657744}
 --- !u!1 &2943120651917138489
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,7 +187,7 @@ GameObject:
   - component: {fileID: 980130727946112702}
   - component: {fileID: 2925390326028809976}
   m_Layer: 0
-  m_Name: 01 PUCK
+  m_Name: 01 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -460,10 +220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "PUCK: \xA1El regalito por aqu\xED otra vez! \xBFYa viste lo qu\xE9 pas\xF3
-    con las bebidas? Nunca hab\xEDa visto a Thistle correr tan r\xE1pido."
+  text: "DANDELIA: No puede ser. \xA1No puede ser! C\xF3mo pude haber hecho algo
+    as\xED. \xA1Ahora mi se\xF1ora nunca estar\xE1 feliz conmigo!"
   next: {fileID: 8652233858818909970}
---- !u!1 &4268401271825627107
+--- !u!1 &3427456179567420741
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -471,91 +231,44 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2736459447108532106}
-  - component: {fileID: 4579270114299113237}
+  - component: {fileID: 8343786925203130196}
+  - component: {fileID: 7446863080277851239}
   m_Layer: 0
-  m_Name: 10 PUCK
+  m_Name: 11 BARDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2736459447108532106
+--- !u!4 &8343786925203130196
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268401271825627107}
+  m_GameObject: {fileID: 3427456179567420741}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8406999609500554258}
+  m_Father: {fileID: 8149265741135457026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4579270114299113237
+--- !u!114 &7446863080277851239
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4268401271825627107}
+  m_GameObject: {fileID: 3427456179567420741}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "PUCK: \xBFPor qu\xE9 no?, podr\xEDa hacer las cosas m\xE1s interesantes.
-    D\xE9jame pensar..."
-  next: {fileID: 7231436386380003102}
---- !u!1 &4386878858054442200
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8866417449874034810}
-  - component: {fileID: 8385283454250657744}
-  m_Layer: 0
-  m_Name: 12 BARDO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8866417449874034810
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4386878858054442200}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8406999609500554258}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8385283454250657744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4386878858054442200}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: Se supone que tengo que decir algo positivo...
-  next: {fileID: 9140144077895143787}
+  text: "\xBFNo me vas a ayu-? Ya se fue."
+  next: {fileID: 0}
 --- !u!1 &4487754329400603390
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,63 +301,8 @@ Transform:
   - {fileID: 2602515700043643071}
   - {fileID: 3998106796092195683}
   - {fileID: 3106618258003822860}
-  - {fileID: 1806754188857931074}
-  - {fileID: 7111138626296948115}
-  - {fileID: 2736459447108532106}
-  - {fileID: 8291969026138313608}
-  - {fileID: 8866417449874034810}
-  - {fileID: 1678435981115167942}
-  - {fileID: 7705913542540179788}
   m_Father: {fileID: 8149265741135457026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &5091906668574098032
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 415783784035361371}
-  - component: {fileID: 1785315166701988101}
-  m_Layer: 0
-  m_Name: DESBLOQUEAR PUCK_B
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &415783784035361371
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5091906668574098032}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9014518752423734872}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1785315166701988101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5091906668574098032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nodeEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  next: {fileID: 4471337686240361472}
 --- !u!1 &5227351659294391922
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +314,7 @@ GameObject:
   - component: {fileID: 2978834369690986945}
   - component: {fileID: 3493495294746768101}
   m_Layer: 0
-  m_Name: 05 BARDO
+  m_Name: 06 BARDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -689,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "\xBFHay alguna broma que hayas hecho que sea particularmente memorable?"
+  text: "Me secuestran y ahora voy a \xBF\xA1MORIR EN UN CALABOZO!?"
   next: {fileID: 2320929499940374105}
 --- !u!1 &5974698490725379942
 GameObject:
@@ -702,7 +360,7 @@ GameObject:
   - component: {fileID: 1858758845036012894}
   - component: {fileID: 5238810559535754397}
   m_Layer: 0
-  m_Name: '03 PUCK '
+  m_Name: 03 BARDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -735,8 +393,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "PUCK: Mmm, bueno ya ver\xE1s la pr\xF3xima. \xBFQuer\xEDas preguntarme algo?"
-  next: {fileID: 6584304793407532188}
+  text: "Podr\xEDas-"
+  next: {fileID: 8708049006838214333}
 --- !u!1 &6066009743111633856
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,7 +406,7 @@ GameObject:
   - component: {fileID: 2602515700043643071}
   - component: {fileID: 3254714824960564157}
   m_Layer: 0
-  m_Name: 05 BARDO
+  m_Name: 06 BARDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -781,7 +439,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "\xBFSabes algo de la reina?"
+  text: "No comiences a llorar ahora, t\xFA nos metiste en este problema \xA1Haz
+    algo!"
   next: {fileID: 7668695806447188953}
 --- !u!1 &6521183523287691476
 GameObject:
@@ -794,7 +453,7 @@ GameObject:
   - component: {fileID: 6575215198297333137}
   - component: {fileID: 6584304793407532188}
   m_Layer: 0
-  m_Name: 04 SELECTION
+  m_Name: 05 SELECTION
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -828,12 +487,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selections:
-  - text: Preguntar por la reina
+  - text: '*enfado*'
     next: {fileID: 3254714824960564157}
     onSelectEvents:
       m_PersistentCalls:
         m_Calls: []
-  - text: Preguntar sobre otras bromas
+  - text: '*miedo*'
     next: {fileID: 3493495294746768101}
     onSelectEvents:
       m_PersistentCalls:
@@ -848,7 +507,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8149265741135457026}
   m_Layer: 0
-  m_Name: Puck Dialogue 02
+  m_Name: Dandelia Dialogue 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -870,10 +529,13 @@ Transform:
   - {fileID: 980130727946112702}
   - {fileID: 2376705359451958478}
   - {fileID: 1858758845036012894}
+  - {fileID: 6339128633330436565}
   - {fileID: 6575215198297333137}
   - {fileID: 8406999609500554258}
   - {fileID: 9014518752423734872}
   - {fileID: 6087824235375050176}
+  - {fileID: 6298698357870651149}
+  - {fileID: 8343786925203130196}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7500518209038403752
@@ -887,7 +549,7 @@ GameObject:
   - component: {fileID: 3998106796092195683}
   - component: {fileID: 7668695806447188953}
   m_Layer: 0
-  m_Name: 06 PUCK
+  m_Name: 07 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -920,8 +582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "PUCK: Directo al grano \xBFeh? Dime, \xBFPor qu\xE9 tendr\xEDa que decirte
-    nada?"
+  text: "DANDELIA: \xBFYo? T\xFA eres quien ten\xEDa que hacer una buena canci\xF3n
+    para su majestad. El humano barbudo dijo que tu-"
   next: {fileID: 3886200134560577600}
 --- !u!1 &7511816659956858448
 GameObject:
@@ -934,7 +596,7 @@ GameObject:
   - component: {fileID: 6087824235375050176}
   - component: {fileID: 4471337686240361472}
   m_Layer: 0
-  m_Name: FIN PUCK
+  m_Name: 09 BARDO
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -967,9 +629,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "PUCK: Bueno, yo me voy, tengo que terminar de hacer algo. Hey, si quieres
-    ayudarme con una \xFAltima cosa antes de irte estar\xE9 por aqu\xED."
-  next: {fileID: 0}
+  text: "Podr\xEDa tratar de averiguar m\xE1s sobre la reina, hacer algo personal."
+  next: {fileID: 8286458478465941407}
 --- !u!1 &8080221269304044566
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +642,7 @@ GameObject:
   - component: {fileID: 2376705359451958478}
   - component: {fileID: 8652233858818909970}
   m_Layer: 0
-  m_Name: 02 BARDO
+  m_Name: 02 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,9 +675,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "Supongo que me lo perd\xED."
+  text: "DANDELIA: Ah\xED est\xE1n todos mis sue\xF1os tirados, sin esperanza, pudri\xE9ndose
+    en el calabozo. "
   next: {fileID: 5238810559535754397}
---- !u!1 &8447463154670723774
+--- !u!1 &8200443675124987854
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1024,88 +686,42 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1678435981115167942}
-  - component: {fileID: 9140144077895143787}
+  - component: {fileID: 6339128633330436565}
+  - component: {fileID: 8708049006838214333}
   m_Layer: 0
-  m_Name: 13 PUCK
+  m_Name: 04 DANDELIA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1678435981115167942
+--- !u!4 &6339128633330436565
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447463154670723774}
+  m_GameObject: {fileID: 8200443675124987854}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8406999609500554258}
+  m_Father: {fileID: 8149265741135457026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9140144077895143787
+--- !u!114 &8708049006838214333
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8447463154670723774}
+  m_GameObject: {fileID: 8200443675124987854}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: 'PUCK: Eres humano. Mentir es lo que mejor se os da, seguro encuentras una
-    manera de decirlo bonito'
-  next: {fileID: 4454374802452660761}
---- !u!1 &9209498957556002317
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7111138626296948115}
-  - component: {fileID: 8254524896997554738}
-  m_Layer: 0
-  m_Name: 09 BARDO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7111138626296948115
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9209498957556002317}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8406999609500554258}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8254524896997554738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9209498957556002317}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: "Entonces, \xBFSi me vas a ayudar?"
-  next: {fileID: 4579270114299113237}
+  text: "DANDELIA: Oh, el calabozo. Quien sabe que cosas terribles podr\xEDan pasar
+    ah\xED. \xA1Yo solo quer\xEDa hacer feliz a mi reina!"
+  next: {fileID: 6584304793407532188}
