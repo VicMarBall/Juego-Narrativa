@@ -8,8 +8,19 @@ public class StartEndingScript : MonoBehaviour
 	// change timer, hide all events, start final event
 	[SerializeField] public UnityEvent startEndingEvents;
 
+	bool endingTriggered;
+
+	private void Awake()
+	{
+		endingTriggered = false;
+	}
+
 	public void StartEnding()
 	{
-		startEndingEvents.Invoke();
+		if (!endingTriggered)
+		{
+			endingTriggered = true;
+			startEndingEvents.Invoke();
+		}
 	}
 }

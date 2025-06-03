@@ -645,6 +645,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1722835353}
+        m_TargetAssemblyTypeName: StartEndingScript, Assembly-CSharp
+        m_MethodName: StartEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &184415303 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7044518596465727071, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
@@ -1955,7 +1967,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selections:
   - text: Si
-    next: {fileID: 0}
+    next: {fileID: 6463561}
     onSelectEvents:
       m_PersistentCalls:
         m_Calls:
@@ -3618,7 +3630,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selections:
   - text: Si
-    next: {fileID: 0}
+    next: {fileID: 6463561}
     onSelectEvents:
       m_PersistentCalls:
         m_Calls:
@@ -4411,7 +4423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selections:
   - text: Si
-    next: {fileID: 0}
+    next: {fileID: 6463561}
     onSelectEvents:
       m_PersistentCalls:
         m_Calls:
@@ -5889,7 +5901,7 @@ Transform:
   m_GameObject: {fileID: 1282654418}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 81.49, y: -11.330084, z: -21.64}
+  m_LocalPosition: {x: 43.83, y: 0.01, z: -1.81}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7015,7 +7027,7 @@ Transform:
   m_GameObject: {fileID: 1570855904}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -37.056316, y: 11.330084, z: 19.452703}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7504,7 +7516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selections:
   - text: Si
-    next: {fileID: 0}
+    next: {fileID: 6463561}
     onSelectEvents:
       m_PersistentCalls:
         m_Calls:
@@ -7699,7 +7711,7 @@ Transform:
   m_GameObject: {fileID: 1689270880}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.7, y: -11.330084, z: 10.9}
+  m_LocalPosition: {x: -28.75, y: 0.32, z: 28.77}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
