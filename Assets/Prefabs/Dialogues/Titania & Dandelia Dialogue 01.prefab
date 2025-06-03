@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: 'DANDELIA: No le decepcionaremos su majestad'
+  text: 'DANDELIA: No le decepcionaremos su majestad.'
   next: {fileID: 0}
 --- !u!1 &1365996638515961287
 GameObject:
@@ -93,7 +93,7 @@ MonoBehaviour:
   text: "DANDELIA: Por supuesto que estoy segura. En ning\xFAn momento trataria de
     enga\xF1arla de forma tan descarada. Probablemente el bardo tan solo est\xE9
     un poco oxidado. Ya sabe como son. Dejenos un ratito y le prometo que haremos
-    un espect\xE1culo inolvidable antes de que termine la fiesta"
+    un espect\xE1culo inolvidable antes de que termine la fiesta."
   next: {fileID: 9120165120248087789}
 --- !u!1 &1586443532998020914
 GameObject:
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "TITANIA: Estar\xE9 esperando"
+  text: "TITANIA: Estar\xE9 esperando."
   next: {fileID: 7429405679052665666}
 --- !u!1 &2640433925697977484
 GameObject:
@@ -428,7 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: 'TITANIA: Llega tarde'
+  text: 'TITANIA: Llega tarde.'
   next: {fileID: 1770687937110708904}
 --- !u!1 &2954977027598765687
 GameObject:
@@ -607,7 +607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: "DANDELIA: Que s\xED que s\xED, que es muy bueno, confie en m\xED. Venga,
-    toca algo"
+    toca algo."
   next: {fileID: 186258720660222720}
 --- !u!1 &4151903339445963445
 GameObject:
@@ -655,7 +655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "TITANIA: Si que es verdad que los guardias perturban el ambiente festivo.
     De acuerdo. Ten\xE9is hasta medianoche para impresionarme. Mas si no lo consegu\xEDs,
-    preparaos para asumir las consecuencias"
+    preparaos para asumir las consecuencias."
   next: {fileID: 7429405679052665666}
 --- !u!1 &4473234561030394010
 GameObject:
@@ -704,7 +704,7 @@ MonoBehaviour:
   text: "DANDELIA: \xBF\xA1Qu\xE9!? No no, espere un momento, estoy segura de que
     podemos arreglar esto pac\xEDficamente. Que le parece si ensayamos un poco y
     le hacemos otra canci\xF3n antes de que termine la fiesta. Seguro que no quiere
-    tanto alboroto de los guardias en medio de la fiesta"
+    tanto alboroto de los guardias en medio de la fiesta."
   next: {fileID: 2439530206519836576}
 --- !u!1 &4707225853032571123
 GameObject:
@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "TITANIA: Qu\xE9... gen\xE9rico"
+  text: "TITANIA: Qu\xE9... gen\xE9rico."
   next: {fileID: 2398811309733207313}
 --- !u!1 &5581309000974777588
 GameObject:
@@ -945,7 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: 'DANDELIA: Este es el mejor bardo del mundo humano. Es una superestrella
     en el otro mundo. Leyendas cuentan de como sus canciones consiguen entretener
-    a reinos enteros'
+    a reinos enteros.'
   next: {fileID: 3585573939782005584}
 --- !u!1 &5869737855396217428
 GameObject:
@@ -992,7 +992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: "DANDELIA: Disc\xFAlpeme su majestad. Le prometo que la espera habr\xE1 valido
-    la pena"
+    la pena."
   next: {fileID: 7897002118650878584}
 --- !u!1 &6093984336746322898
 GameObject:
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "TITANIA: Est\xE1 bien... supongo"
+  text: "TITANIA: Est\xE1 bien... supongo."
   next: {fileID: 9039351499026028453}
 --- !u!1 &6787547279585686002
 GameObject:
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "TITANIA: Ha sido... decepcionante. Hay que tener osadia para hacer un espect\xE1culo
     tan mediocre en el aniversario de la reina. \xA1Guardias! Ll\xE9vense al humano
-    a los calabozos, y saquen al hada de mi fiesta"
+    a los calabozos, y saquen al hada de mi fiesta."
   next: {fileID: 3201026299316183586}
 --- !u!1 &8140310553225487793
 GameObject:
@@ -1546,5 +1546,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: 'TITANIA: No se ve muy preparado'
+  text: 'TITANIA: No se ve muy preparado.'
   next: {fileID: 6988617277874190371}
