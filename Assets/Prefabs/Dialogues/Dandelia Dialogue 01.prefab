@@ -153,7 +153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9014518752423734872}
   m_Layer: 0
-  m_Name: Preguntar sobre otras bromas
+  m_Name: miedo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,7 +279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8406999609500554258}
   m_Layer: 0
-  m_Name: Preguntar por la reina
+  m_Name: furia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
