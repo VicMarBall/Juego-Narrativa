@@ -406,7 +406,7 @@ GameObject:
   - component: {fileID: 6714934116250613348}
   - component: {fileID: 5442988665204503732}
   m_Layer: 0
-  m_Name: 24 CALICO
+  m_Name: 24 ???
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -439,9 +439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "CALICO: Es muy capaz y se toma todo muy en serio, como habr\xE1s podido
-    comprobar. Me escogi\xF3 a m\xED como guarda personal, as\xED que le estoy extremadamente
-    agradecido."
+  text: '*KABOOM*'
   next: {fileID: 8661813742302387708}
 --- !u!1 &3427456179567420741
 GameObject:
@@ -524,7 +522,6 @@ Transform:
   - {fileID: 6227148320570762560}
   - {fileID: 6714934116250613348}
   - {fileID: 107061867128510665}
-  - {fileID: 2932285123980700338}
   m_Father: {fileID: 8149265741135457026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4227766584245595882
@@ -1177,54 +1174,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: "NAYA: Je, je. Tan solo bromeamos. \xBFVerdad, C\xE1lico?"
   next: {fileID: 4471337686240361472}
---- !u!1 &7505066542795047464
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2932285123980700338}
-  - component: {fileID: 1814832729182040911}
-  m_Layer: 0
-  m_Name: 26 CALICO
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2932285123980700338
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7505066542795047464}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5836236537787751430}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1814832729182040911
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7505066542795047464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: "CALICO: \u2026Oh no. \xA1No s\xE9 qu\xE9 cosas le gustan a la reina! \xBFQu\xE9
-    clase de guarda personal no sabe estas cosas? Por favor, ay\xFAdame a descubrir
-    lo que le gusta a la reina. A cambio, te dir\xE9 lo que quieras."
-  next: {fileID: 0}
 --- !u!1 &7511816659956858448
 GameObject:
   m_ObjectHideFlags: 0
@@ -1698,10 +1647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1eac9b7035258ab4c87fffbb28cdbd06, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: "CALICO: \xBFQue qu\xE9 cosas le gustan en espec\xEDfico? Esto\u2026 le gustan\u2026
-    \xBFlas flores\u2026? No, nunca las ha mencionado. Alguna vez ha hablado de\u2026
-    los s\xFAbditos\u2026 no, tampoco es eso\u2026"
-  next: {fileID: 1814832729182040911}
+  text: "CALICO: \xBFQu\xE9 fue ese ruido? La reina puede estar en peligro. Lo siento,
+    debo irme. Hablemos luego."
+  next: {fileID: 0}
 --- !u!1 &9160478262578904979
 GameObject:
   m_ObjectHideFlags: 0
