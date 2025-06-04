@@ -6,6 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/Scenes/MainMenu.unity
+    guid: b0bb70acedf75824c90363bcd25bfd92
+  - enabled: 1
+    path: Assets/Scenes/IntroScene.unity
+    guid: 5c6c05d16bbb40145a95895812795d9a
+  - enabled: 1
+    path: Assets/Scenes/Final Delivery.unity
+    guid: cfa71b4339c58ee4fa8bcd46b75955a3
+  - enabled: 1
+    path: Assets/Scenes/FirstBadEnding.unity
+    guid: 9f4af9955ef729147a93889a4eb88b8e
+  - enabled: 1
+    path: Assets/Scenes/SongBadEnding.unity
+    guid: fb5b1254b34fd4449ae1799d894e5aa1
+  - enabled: 1
+    path: Assets/Scenes/SongGoodEnding.unity
+    guid: 01d816d91cbb3594799b184f33168b2b
+  - enabled: 1
+    path: Assets/Scenes/SongSecretEnding.unity
+    guid: c91e722c30736604299a6a3921c6d545
   m_configObjects: {}

@@ -398,6 +398,66 @@ Transform:
   m_Children: []
   m_Father: {fileID: 371407059}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &34925964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 34925965}
+  - component: {fileID: 34925966}
+  m_Layer: 0
+  m_Name: BAD ENDING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &34925965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34925964}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.62006617, y: -0.06645298, z: 8.067146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 239492138}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &34925966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 34925964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 275225981}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ToSongBadEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  next: {fileID: 0}
 --- !u!1 &37225088
 GameObject:
   m_ObjectHideFlags: 0
@@ -2047,6 +2107,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 227393436}
   m_Mesh: {fileID: -384872441667058801, guid: 4732b10844f53e24bbf4c11762c0ae81, type: 3}
+--- !u!4 &239492138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5349758035765497882, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696053562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &247547253 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: edc2980db4295dc48a0c7342b2c4931f,
@@ -2282,6 +2348,50 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1456488696}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &275225980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275225982}
+  - component: {fileID: 275225981}
+  m_Layer: 0
+  m_Name: Scene Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &275225981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275225980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf05ef058cb7be349af632b35d105f53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &275225982
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275225980}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &279457084
 GameObject:
@@ -3152,6 +3262,11 @@ PrefabInstance:
       propertyPath: selections.Array.data[2].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1829038720}
+    - target: {fileID: 3177458906439570896, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1493265184}
     - target: {fileID: 4869608013692380206, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
         type: 3}
       propertyPath: selections.Array.data[0].onSelectEvents.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3263,6 +3378,10 @@ PrefabInstance:
         type: 3}
       insertIndex: 20
       addedObject: {fileID: 18866180}
+    - targetCorrespondingSourceObject: {fileID: 8149265741135457026, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
+        type: 3}
+      insertIndex: 24
+      addedObject: {fileID: 1493265185}
     - targetCorrespondingSourceObject: {fileID: 8149265741135457026, guid: 84db9c9972392ab4c896d3c6d3c3e3e0,
         type: 3}
       insertIndex: -1
@@ -6013,6 +6132,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 635064163}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &579511779 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1555738277501326410, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696053562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &585676287
 GameObject:
   m_ObjectHideFlags: 0
@@ -15058,6 +15183,66 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2025001597}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1323244121
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323244122}
+  - component: {fileID: 1323244123}
+  m_Layer: 0
+  m_Name: SECRET ENDING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1323244122
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323244121}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.62006617, y: -0.06645298, z: 8.067146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1696819164}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1323244123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323244121}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 275225981}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ToSongSecretEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  next: {fileID: 0}
 --- !u!1 &1335577913
 GameObject:
   m_ObjectHideFlags: 0
@@ -17351,6 +17536,126 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 194.20511, y: 322.35226, z: 193.19632}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1493065141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493065142}
+  - component: {fileID: 1493065143}
+  m_Layer: 0
+  m_Name: GOOD ENDING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1493065142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493065141}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.62006617, y: -0.06645298, z: 8.067146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 579511779}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1493065143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493065141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 275225981}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ToSongGoodEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  next: {fileID: 0}
+--- !u!1 &1493265183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1493265185}
+  - component: {fileID: 1493265184}
+  m_Layer: 0
+  m_Name: BAD ENDING
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1493265184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493265183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0a68cc5e6c462a48aacccfb5a3605ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 275225981}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: ToFirstBadEnding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  next: {fileID: 0}
+--- !u!4 &1493265185
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1493265183}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 371407059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1504578519 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -475845528789024831, guid: e0606939b76f0d74c86ff3f4b0a67dbc,
@@ -19214,6 +19519,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 146482579}
     m_Modifications:
+    - target: {fileID: 1968328671834816401, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1493065143}
+    - target: {fileID: 2944872166383350385, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1323244123}
     - target: {fileID: 6138306019278318492, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
         type: 3}
       propertyPath: m_Name
@@ -19274,6 +19589,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6780037467117943136, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 34925966}
     - target: {fileID: 8475238718393166406, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
         type: 3}
       propertyPath: nodeEvent.m_PersistentCalls.m_Calls.Array.size
@@ -19351,8 +19671,26 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 272063087}
+    - targetCorrespondingSourceObject: {fileID: 1740760885991829969, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1323244122}
+    - targetCorrespondingSourceObject: {fileID: 1555738277501326410, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1493065142}
+    - targetCorrespondingSourceObject: {fileID: 5349758035765497882, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 34925965}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5254106a60f31dd4b883d3e3ba7e01cd, type: 3}
+--- !u!4 &1696819164 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1740760885991829969, guid: 5254106a60f31dd4b883d3e3ba7e01cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1696053562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &1700886006
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -24292,3 +24630,4 @@ SceneRoots:
   - {fileID: 1167012325}
   - {fileID: 1570855905}
   - {fileID: 1743544769}
+  - {fileID: 275225982}
