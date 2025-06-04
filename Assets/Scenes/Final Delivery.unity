@@ -4557,16 +4557,16 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1385777307}
     m_Modifications:
-    - target: {fileID: 2925390326028809976, guid: 5de1643eee7fdcf4cac84f68da8c9ecc,
-        type: 3}
-      propertyPath: next
-      value: 
-      objectReference: {fileID: 1447969664}
     - target: {fileID: 6976948935217182961, guid: 5de1643eee7fdcf4cac84f68da8c9ecc,
         type: 3}
       propertyPath: m_Name
       value: Calico Dialogue 02
       objectReference: {fileID: 0}
+    - target: {fileID: 7502984846630147649, guid: 5de1643eee7fdcf4cac84f68da8c9ecc,
+        type: 3}
+      propertyPath: next
+      value: 
+      objectReference: {fileID: 1447969664}
     - target: {fileID: 8149265741135457026, guid: 5de1643eee7fdcf4cac84f68da8c9ecc,
         type: 3}
       propertyPath: m_LocalPosition.x
