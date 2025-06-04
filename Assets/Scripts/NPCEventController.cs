@@ -10,9 +10,12 @@ public class NPCEventController : MonoBehaviour
 
     public void CloneEventIntoHourFrame(GameObject hourFrameObject)
     {
-        if (eventLayoutPerPhase[phase] != null)
-        {
-			Instantiate(eventLayoutPerPhase[phase], hourFrameObject.transform);
+		if (phase < eventLayoutPerPhase.Count)
+		{ 
+			if (eventLayoutPerPhase[phase] != null)
+            {
+				Instantiate(eventLayoutPerPhase[phase], hourFrameObject.transform);
+			}
 		}
 	}
 
